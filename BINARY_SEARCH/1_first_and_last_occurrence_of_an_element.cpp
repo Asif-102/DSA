@@ -23,5 +23,23 @@ int main() {
         }
     }
     cout << first_occur << '\n';
+
+    int last_occur = -1;
+
+    start = 0;
+    end = v.size()-1;
+
+    while(start <= end){
+        int mid = start + (end-start)/2;
+        if(v[mid] == find){
+            last_occur = mid;
+            start = mid+1;
+        }else if(v[mid] > find){
+            end = mid-1;
+        }else{
+            start = mid+1;
+        }
+    }
+    cout << last_occur << '\n';
     return 0;
 }
