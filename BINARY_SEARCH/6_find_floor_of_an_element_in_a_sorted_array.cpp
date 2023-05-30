@@ -16,7 +16,10 @@ int main() {
     while(start <= end){
         int mid = start + (end-start)/2;
 
-        if(v[mid] < x){
+        if(v[mid] == x){
+            res = v[mid];
+            break;
+        }else if(v[mid] < x){
             res = v[mid];
             start = mid+1;
         }else if(v[mid] > x){
