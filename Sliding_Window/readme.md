@@ -6,5 +6,5 @@
 - not given window size
 
 ## Types
- - fix size window
- - variable size window
+ - fix size window (given window size)
+ - variable size window (given condition)
